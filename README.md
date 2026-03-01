@@ -1,20 +1,14 @@
-# arcgis-calcite-template
-Template for a ArcGIS JS 4 mapping web app using [calcite](https://developers.arcgis.com/calcite-design-system/) components
+# arcgis-ai-pos
+Demo of ArcGIS Maps SDK ai-components
 
-## Importing ArcGIS ES Modules
+## Using ArcGIS Maps SDK
 For simplified version management an import map is used for ArcGIS ES Modules import. To change the version update the import map in index.html
 ```html
-  <script type="importmap">
-    {
-      "imports": {
-        "@arcgis/": "https://js.arcgis.com/4.28/@arcgis/"
-      }
-    }
-  </script>
+  <script type="module" src="https://js.arcgis.com/5.0/"></script>
 ```
-Using the import map a typical import can be done as following
+Using $arcgis.import to import modules
 ```js
-import WebMap from '@arcgis/core/WebMap.js'
+const Portal = await $arcgis.import("@arcgis/core/portal/Portal.js")
 ```
 
 ## Debugging
@@ -47,8 +41,8 @@ In main.css set the color scheme for dark themed browser controls e.g. scrollbar
 }
 ```
 #### WebMap
-Adds a ArcGIS WebMap to the viewDiv in index.html
+Adds a ArcGIS WebMap to the arcgis-map in index.html
 ```html
-  <div id="viewDiv"></div>
+  <div id="arcgis-map"></div>
 ```
 

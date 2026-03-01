@@ -1,6 +1,9 @@
- import Portal from '@arcgis/core/portal/Portal.js'
-import OAuthInfo from '@arcgis/core/identity/OAuthInfo.js'
-import esriId from '@arcgis/core/identity/IdentityManager.js'
+//import Portal from '@arcgis/core/portal/Portal.js'
+//import OAuthInfo from '@arcgis/core/identity/OAuthInfo.js'
+//import esriId from '@arcgis/core/identity/IdentityManager.js'
+const Portal = await $arcgis.import("@arcgis/core/portal/Portal.js")
+const OAuthInfo = await $arcgis.import("@arcgis/core/identity/OAuthInfo.js")
+const esriId = await $arcgis.import("@arcgis/core/identity/IdentityManager.js")
 
 let info = null
 
