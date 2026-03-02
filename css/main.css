@@ -11,6 +11,10 @@ body,
   width: 100%;
 }
 
+calcite-panel {
+  height: 100%;
+}
+
 calcite-loader {
   align-self: center;
   justify-self: center;
